@@ -6,4 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <TextView
+        android:id="@+id/mTvTitle"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:text="Log in here"
+        android:textColor="#2916f5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/mEdtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mEdtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#0C090A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mEdtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTvTitle" />
+
+    <EditText
+        android:id="@+id/mEdtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#0C090A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mBtnLogin"
+        app:layout_constraintStart_toStartOf="@+id/mEdtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtEmail" />
+
+    <Button
+        android:id="@+id/mBtnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="46dp"
+        android:text="LOG IN"
+        app:layout_constraintBottom_toTopOf="@+id/mTvLogin"
+        app:layout_constraintStart_toStartOf="@+id/mTvLogin"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtPassword" />
+
+    <TextView
+        android:id="@+id/mTvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
+        android:text="No account yet ? Register"
+        app:layout_constraintBottom_toTopOf="@+id/mTvReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnLogin" />
+
+    <TextView
+        android:id="@+id/mTvReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="180dp"
+        android:text="Reset Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mTvLogin"
+        app:layout_constraintTop_toBottomOf="@+id/mTvLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
