@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "281577067596",
+    "firebase_url": "https://nyumba10-app-default-rtdb.firebaseio.com",
+    "project_id": "nyumba10-app",
+    "storage_bucket": "nyumba10-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281577067596:android:2e6e6162a90cb4b45210e9",
+        "android_client_info": {
+          "package_name": "com.example.nyumba10"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQeZvqSp1doLDQkWOiHBnRN97eV5e5b_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
