@@ -39,7 +39,11 @@ class MainActivity : AppCompatActivity() {
             }else if(password.isEmpty()){
                 edtPassword.setError("Please fill this input")
                 edtPassword.requestFocus()
-            }else{
+            }else if(password.length < 6){
+                edtPassword.setError("Password is too short")
+                edtPassword.requestFocus()
+            }
+                else{
                 progress.show()
                 mAuth.createUserWithEmailAndPassword(email, password)
                      .addOnCompleteListener{
