@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
                         Toast.makeText(this, "Registrationn successful",
                             Toast.LENGTH_SHORT).show()
                         mAuth.signOut()
-                        startActivity(Intent(this, LoginActivity::class.java))
+                        startActivity(Intent(this, HomeActivity::class.java))
                         finish()
 
                     }else{

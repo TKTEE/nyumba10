@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:background="@drawable/anime">
+    tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/mTvTitle"
@@ -15,7 +14,7 @@
         android:layout_marginBottom="48dp"
         android:gravity="center"
         android:text="Log in here"
-        android:textColor="#2916f5"
+        android:textColor="#D11313"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/mEdtEmail"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +31,7 @@
         android:hint="@string/enter_your_email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:textColor="#2916f5"
+        android:textColor="#D11313"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/mEdtPassword"
@@ -44,8 +43,7 @@
         android:id="@+id/mEdtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="42dp"
+
         android:ems="10"
         android:gravity="center"
         android:hint="Enter Password"
