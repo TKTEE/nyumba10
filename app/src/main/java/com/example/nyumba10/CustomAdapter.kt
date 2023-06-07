@@ -7,6 +7,7 @@ import android.widget.BaseAdapter
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 
 class CustomAdapter(var context: Context, var data:ArrayList<House>):BaseAdapter() {
     private class ViewHolder(row:View?){
@@ -44,9 +45,13 @@ class CustomAdapter(var context: Context, var data:ArrayList<House>):BaseAdapter
         viewHolder.mTxtHouseNumber.text = item.houseNumber
         viewHolder.mTxtHouseSize.text = item.houseSize
         viewHolder.mTxtHousePrice.text = item.housePrice
-        viewHolder.imgHousePic.image = item.houseImage
-        viewHolder.btnDelete.button = item.housePrice
-        viewHolder.btnUpload.button = item.housePrice
+        Glide.with(context).load(item.houseImage).into(viewHolder.imgHousePic)
+        viewHolder.btnDelete.setOnClickListener {
+
+        }
+        viewHolder.btnUpload.setOnClickListener {
+
+        }
         return view as View
     }
 
